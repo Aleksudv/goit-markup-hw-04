@@ -477,7 +477,6 @@ body {
 .list-company {
   display: flex;
   justify-content: center;
-  padding-bottom: 94px;
 }
 
 .container-company {
@@ -610,6 +609,7 @@ address {
   padding-right: 15px;
 
   display: flex;
+  align-items: baseline;
 }
 
 .container-social_footer {
@@ -619,7 +619,6 @@ address {
 .container-first {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-left: 70px;
 }
 
