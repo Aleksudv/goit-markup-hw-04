@@ -388,8 +388,6 @@ body {
 .feature-comand {
   display: flex;
   justify-content: center;
-
-  padding-bottom: 94px;
 }
 
 .feature-img {
@@ -477,7 +475,6 @@ body {
 .list-company {
   display: flex;
   justify-content: center;
-  padding-bottom: 94px;
 }
 
 .container-company {
