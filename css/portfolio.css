@@ -55,11 +55,6 @@ body {
   box-sizing: border-box;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* HEADER */
 
 .container {
@@ -70,11 +65,11 @@ body {
   padding-right: 15px;
 }
 
-.page-header {
+.header {
   background-color: rgba(255, 255, 255, 1);
   padding: 24px 0px;
 
-  stroke: 1px solid #ececec;
+  border: 1px solid #ececec;
 }
 
 .cont-nav {
@@ -82,10 +77,11 @@ body {
   align-items: center;
 }
 
-.wrapper {
+.header .wrapper {
   display: flex;
   justify-content: space-between;
-  box-shadow: 1px rgba(236, 236, 236, 1);
+
+  box-sizing: border-box;
 }
 
 /* LOGO */
@@ -93,7 +89,7 @@ body {
 .logo {
   display: flex;
 
-  font-family: raleway, cursive;
+  font-family: raleway;
   color: rgba(33, 150, 243, 1);
 
   font-weight: 700;
@@ -139,10 +135,6 @@ body {
   column-gap: 50px;
 }
 
-.site-adress .item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .site-adress .adress {
   color: var(--title-tex-color);
 
@@ -151,25 +143,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-.conteiner-site-adress {
-  display: flex;
-}
-
-.adress:hover,
-.adress:focus {
+.site-adress .adress:hover,
+.site-adress .adress:focus {
   color: var(--accent-color);
-}
-
-.adres_icon {
-  width: 16px;
-  height: 12px;
-  fill: var(--title-tex-color);
-  margin-right: 10px;
-}
-
-.adres_icon:hover,
-.adres_icon:focus {
-  fill: var(--accent-color);
 }
 
 /* MAIN */
@@ -233,16 +209,20 @@ body {
   justify-content: center;
   column-gap: 8px;
 
+  padding-top: 94px;
   margin-bottom: 50px;
 
   width: calc(100% - 32px) / 5;
 }
+
 /* СПИСОК ПРОЕКТІВ */
 
 .text-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  padding-bottom: 94px;
 }
 
 .text .text-title {
@@ -262,6 +242,9 @@ body {
 
 .tex-footer {
   background-color: var(--accent-color-white);
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .container-tex-footer {
