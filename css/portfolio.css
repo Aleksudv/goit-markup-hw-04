@@ -143,9 +143,21 @@ body {
   letter-spacing: 0.02em;
 }
 
-.site-adress .adress:hover,
-.site-adress .adress:focus {
+.adress:hover,
+.adress:focus {
   color: var(--accent-color);
+}
+
+.adres_icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--title-tex-color);
+  margin-right: 10px;
+}
+
+.adres_icon:hover,
+.adres_icon:focus {
+  fill: var(--accent-color);
 }
 
 /* MAIN */
