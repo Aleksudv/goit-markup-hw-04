@@ -100,6 +100,8 @@ body {
 
 .logo {
   display: flex;
+  lign-items: center;
+  justify-content: center;
 
   font-family: raleway;
   color: rgba(33, 150, 243, 1);
@@ -116,6 +118,8 @@ body {
 
 .site-nav {
   display: flex;
+  lign-items: center;
+  justify-content: center;
   margin-left: 93px;
   column-gap: 50px;
 }
@@ -278,6 +282,8 @@ body {
 
 .tex-footer {
   background-color: var(--accent-color-white);
+  width: 370px;
+  height: 404px;
 }
 
 .tex-footer:hover {
@@ -288,6 +294,36 @@ body {
 .container-tex-footer {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+.tex-footer-one {
+  position: relative;
+
+  overflow: hidden;
+}
+.tex-overlya {
+  position: absolute;
+  top: 0;
+  left: 0%;
+
+  padding: 63px 24px;
+
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+
+.tex-footer-one:hover .tex-overlya {
+  transform: translateY(0%);
+}
+
+.focus:focus .tex-overlya {
+  transform: translateY(0%);
 }
 
 /* FOOTER */
